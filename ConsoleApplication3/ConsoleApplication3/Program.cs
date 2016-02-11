@@ -3,14 +3,14 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.IO;
 
 namespace ConsoleApplication3
 {
     class Student
     {
-        static void Main(string[] args)
-        {
-            public string name;
+        
+        public string name;
         public string surname;
         public string ID;
         public double gpa;
@@ -22,9 +22,10 @@ namespace ConsoleApplication3
             this.ID = ID;
             this.gpa = gpa;
         }
-        public overright string ToString()
+
+        public override string ToString()
         {
-            return name + " " + surname + " " + gpa + " " + ID;
+            return this.name + " " + this.surname + " " + this.ID + " " + this.gpa;
              
         }
         }
@@ -32,14 +33,11 @@ namespace ConsoleApplication3
     {
         static void Main(string[] args)
         {
-            string name = Console.ReadLine();
-            string surname = Console.ReadLine();
-            double gpa = Convert.ToDouble(Console.ReadLine());
-            string ID = Console.ReadLine();
-            Student info = new Student(name, surname, gpa, ID);
-            Console.ReadLine(Info);
-            Console.ReadKey;
+
+           Student FirstStudent=new Student("Kusmoldaeva", "Akniet", "15BD02053", 4.0 );
+            Console.WriteLine(FirstStudent);
+            Console.ReadKey();
         }
-    }
+    
     }
 }
